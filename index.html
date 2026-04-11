@@ -4,543 +4,531 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Automation Agency - We help businesses automate their workflows and scale efficiently">
-    <title>Otomate | Transform Your Business</title>
-
+    <title>Otomate | Your AI + Human Marketing Team</title>
+    <meta name="description" content="Otomate - Your AI + Human Marketing Team.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for standard icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- Navigation -->
+
+    <!-- STICKY NAVBAR -->
     <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                <span class="logo-icon">⚡</span>
-                <span class="logo-text">Otomate<span class="gradient-text"></span></span>
-            </a>
-
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <!-- <li><a href="#about" class="nav-link">About</a></li> -->
-                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">oto<strong>mate</strong></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#portfolio">Our Work</a></li>
             </ul>
-
-            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-                <span class="hamburger"></span>
-            </button>
+            <div class="nav-actions">
+                <!-- <a href="#" class="nav-login">Log In</a> -->
+                <a href="#" class="btn btn-primary" data-cal-link="sun-vai-ankzcv/15min"
+                    data-cal-config='{"layout":"month_view"}'>Book a Call</a>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-bg">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
-        </div>
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title fade-in">
-                    You’re
-                    <span class="gradient-text">Bleeding Revenue</span>
-                </h1>
-                <p class="hero-subtitle fade-in">
-                    Revenue leakage is draining up to 15% of your EBITDA. Recover it on autopilot.
-                </p>
-                <div class="hero-buttons fade-in">
-                    <a href="#contact" class="btn btn-primary">
-                        Plan My AI Activation
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#services" class="btn btn-secondary">
-                        Learn More
-                    </a>
+    <!-- HERO SECTION -->
+    <header class="hero section-scroll reveal">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">👋 The future of marketing implementation</div>
+                <h1 class="hero-title">Your complete marketing department, <em>automated.</em></h1>
+                <p class="hero-subtitle">Get the execution of an entire digital agency for a fraction of the cost. We
+                    blend superhuman AI with top-tier talent to ship your tasks instantly.</p>
+                <div class="hero-cta-group">
+                    <a href="#how-it-works" class="btn btn-primary btn-large">See How It Works</a>
+                    <a href="#demo" class="btn btn-secondary btn-large"><svg class="icon" viewBox="0 0 24 24" width="24"
+                            height="24" fill="currentColor">
+                            <path d="M8 5v14l11-7z" />
+                        </svg> Watch 2-min demo</a>
                 </div>
-                <!-- <div class="hero-stats fade-in">
-                    <div class="stat">
-                        <span class="stat-number" data-target="500">0</span>+
-                        <span class="stat-label">Clients</span>
+                <div class="hero-trust">
+                    <div class="avatars">
+                        <div class="avatar" style="background-image: url('https://i.pravatar.cc/100?img=1');"></div>
+                        <div class="avatar" style="background-image: url('https://i.pravatar.cc/100?img=2');"></div>
+                        <div class="avatar" style="background-image: url('https://i.pravatar.cc/100?img=3');"></div>
+                        <div class="avatar" style="background-image: url('https://i.pravatar.cc/100?img=4');"></div>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number" data-target="98">0</span>%
-                        <span class="stat-label">Success Rate</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number" data-target="1000">0</span>+
-                        <span class="stat-label">Projects</span>
-                    </div>
-                </div> -->
-            </div>
-            <div class="hero-image fade-in">
-                <div class="hero-illustration">
-                    <div class="floating-card card-1">
-                        <i class="fas fa-robot"></i>
-                        <span>AI Powered</span>
-                    </div>
-                    <div class="floating-card card-2">
-                        <i class="fas fa-chart-line"></i>
-                        <span>+250% ROI</span>
-                    </div>
-                    <div class="floating-card card-3">
-                        <i class="fas fa-clock"></i>
-                        <span>24/7 Support</span>
+                    <div class="trust-text">
+                        <div class="stars">★★★★★</div>
+                        <span>Trusted by 1000+ Founders</span>
                     </div>
                 </div>
             </div>
+            <div class="hero-visual">
+                <!-- Abstract visual representation of their UI graphic -->
+                <div class="mockup-window">
+                    <div class="mockup-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="task-card">
+                            <div class="task-header">
+                                <span class="tag tech">Development</span>
+                                <span class="time">Just now</span>
+                            </div>
+                            <h4>Build new landing page</h4>
+                            <div class="progress-bar">
+                                <div class="fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="task-card">
+                            <div class="task-header">
+                                <span class="tag design">Design</span>
+                                <span class="time">2 hrs ago</span>
+                            </div>
+                            <h4>Refresh Facebook ad creatives</h4>
+                            <div class="status-badge done">Completed</div>
+                        </div>
+                        <div class="task-card">
+                            <div class="task-header">
+                                <span class="tag ops">Ops</span>
+                                <span class="time">Yesterday</span>
+                            </div>
+                            <h4>Setup Zapier automation flow</h4>
+                            <div class="status-badge done">Completed</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="decorative-blob"></div>
+            </div>
         </div>
-        <div class="scroll-indicator">
-            <a href="#services">
-                <i class="fas fa-chevron-down"></i>
-            </a>
+    </header>
+
+    <!-- SOCIAL PROOF MARQUEE -->
+    <section class="social-proof section-scroll reveal">
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>Integrated with your favorite tools:</span>
+                <i class="fab fa-slack"></i>
+                <i class="fab fa-figma"></i>
+                <i class="fab fa-wordpress"></i>
+                <i class="fab fa-shopify"></i>
+                <i class="fab fa-mailchimp"></i>
+                <i class="fab fa-hubspot"></i>
+                <span>And 100+ more via Zapier...</span>
+            </div>
+            <!-- Duplicate for infinite scroll effect -->
+            <div class="marquee-content">
+                <span>Integrated with your favorite tools:</span>
+                <i class="fab fa-slack"></i>
+                <i class="fab fa-figma"></i>
+                <i class="fab fa-wordpress"></i>
+                <i class="fab fa-shopify"></i>
+                <i class="fab fa-mailchimp"></i>
+                <i class="fab fa-hubspot"></i>
+                <span>And 100+ more via Zapier...</span>
+            </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
+    <!-- PAIN POINTS: BEFORE / AFTER -->
+    <section class="pain-points section-scroll reveal">
+        <div class="container pain-grid">
+            <div class="pain-card before-card">
+                <h3>Your Monday Before</h3>
+                <p>You open your laptop. Everything hits at once:</p>
+                <ul class="checklist bad-list">
+                    <li><i class="fas fa-times-circle"></i> Finish landing page??</li>
+                    <li><i class="fas fa-times-circle"></i> Post SOMETHING on socials</li>
+                    <li><i class="fas fa-times-circle"></i> Reply to that email from 2 weeks ago</li>
+                    <li><i class="fas fa-times-circle"></i> Website still broken on mobile</li>
+                    <li><i class="fas fa-times-circle"></i> Record that video</li>
+                    <li><i class="fas fa-times-circle"></i> Set up the automation</li>
+                </ul>
+                <div class="status-alert">Marketing gets pushed to "tomorrow." Again.</div>
+            </div>
+
+            <div class="pain-card after-card">
+                <h3>Your Monday With Us</h3>
+                <p>You open your laptop with your coffee. There's a notification:</p>
+                <div class="good-notification">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <strong>This week's marketing — handled.</strong>
+                        <span>Your social content is scheduled. Output nurture went out overnight. Three replies
+                            already.</span>
+                    </div>
+                </div>
+                <p style="margin-top: 1rem;">You spend the morning on strategy and client calls. Because your marketing
+                    machine is running without you.</p>
+                <div class="authors-note">
+                    "I used to spend every Sunday night dreading the marketing I hadn't done. Now I spend it planning my
+                    next offer."
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFFERINGS 9-GRID -->
+    <section id="services" class="offerings-section section-scroll reveal">
         <div class="container">
+            <div class="section-header text-center">
+                <h2>Everything Your Marketing Needs — Handled</h2>
+                <p class="subtitle">Not a list of services. A list of things you'll never have to worry about again.</p>
+            </div>
+
+            <div class="offerings-grid">
+                <!-- 1 -->
+                <div class="offer-card">
+                    <div class="offer-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <h3>Your content calendar</h3>
+                    <ul class="offer-points">
+                        <li>Social posts written & designed</li>
+                        <li>Carousel graphics ready to publish</li>
+                        <li>Captions that sound like you</li>
+                        <li>Analytics tracked</li>
+                    </ul>
+                </div>
+                <!-- 2 -->
+                <div class="offer-card">
+                    <div class="offer-icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <h3>Your emails going out</h3>
+                    <ul class="offer-points">
+                        <li>Nurture sequences warming leads</li>
+                        <li>Sales emails that convert</li>
+                        <li>Newsletters your list opens</li>
+                        <li>Follow-ups that never fall through</li>
+                    </ul>
+                </div>
+                <!-- 3 -->
+                <div class="offer-card">
+                    <div class="offer-icon"><i class="fas fa-pen-fancy"></i></div>
+                    <h3>Your copy written</h3>
+                    <ul class="offer-points">
+                        <li>Web pages that sell</li>
+                        <li>Blog posts driving traffic</li>
+                        <li>Ad copy tested and optimized</li>
+                        <li>Lead magnets your audience wants</li>
+                    </ul>
+                </div>
+                <!-- 4 -->
+                <div class="offer-card">
+                    <div class="offer-icon"><i class="fas fa-paint-roller"></i></div>
+                    <h3>Your brand polished</h3>
+                    <ul class="offer-points">
+                        <li>Social graphics on-brand</li>
+                        <li>Banners, flyers & promos</li>
+                        <li>Presentations that look sharp</li>
+                        <li>Consistent branding everywhere</li>
+                    </ul>
+                </div>
+                <!-- 5 -->
+                <div class="offer-card">
+                    <div class="offer-icon"><i class="fas fa-video"></i></div>
+                    <h3>Your videos edited</h3>
+                    <ul class="offer-points">
+                        <li>Reels & Shorts cut perfectly</li>
+                        <li>Podcast episodes cleaned up</li>
+                        <li>YouTube edits with intros</li>
+                        <li>Repurposed clips for every platform</li>
+                    </ul>
+                </div>
+                <!-- 6 -->
+                <div class="offer-card">
+                    <div class="offer-icon"><i class="fas fa-filter"></i></div>
+                    <h3>Your funnels live</h3>
+                    <ul class="offer-points">
+                        <li>Landing pages built and launched</li>
+                        <li>Opt-in pages capturing leads</li>
+                        <li>Sales pages that close</li>
+                        <li>Thank-you pages that upsell</li>
+                    </ul>
+                </div>
+                <!-- 7 -->
+                <div class="offer-card">
+                    <div class="offer-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Your website updated</h3>
+                    <ul class="offer-points">
+                        <li>New pages and sections built</li>
+                        <li>WordPress, Webflow handled</li>
+                        <li>Regular updates so nothing goes stale</li>
+                        <li>Mobile-optimized loading fast</li>
+                    </ul>
+                </div>
+                <!-- 8 -->
+                <div class="offer-card">
+                    <div class="offer-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Your automations running</h3>
+                    <ul class="offer-points">
+                        <li>CRM workflows that work</li>
+                        <li>Zapier & Make integrations</li>
+                        <li>Client onboarding on autopilot</li>
+                        <li>Follow-ups triggered on time</li>
+                    </ul>
+                </div>
+                <!-- 9 -->
+                <div class="offer-card">
+                    <div class="offer-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Your AI agents working</h3>
+                    <ul class="offer-points">
+                        <li>Chatbots handling inquiries 24/7</li>
+                        <li>AI receptionists qualifying leads</li>
+                        <li>Smart workflows routing tasks</li>
+                        <li>Support covered while offline</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONCIERGE CHAT SECTION -->
+    <section id="how-it-works" class="concierge-section section-scroll reveal">
+        <div class="container concierge-grid">
+            <div class="concierge-content">
+                <h2>Meet Marketing Concierge</h2>
+                <p>Experience the seamless flow from idea to execution. Concierge is the platform where you collaborate
+                    with your AI Agents + Human Heroes. Just describe what's on your plate. Alex helps you break it down
+                    into actionable tasks for the team.</p>
+                <div class="collab-steps">
+                    <div class="collab-step">
+                        <span class="num">1</span> <strong>Start a Conversation</strong>: You brief Alex on your goal.
+                    </div>
+                    <div class="collab-step">
+                        <span class="num">2</span> <strong>AI Collaboration</strong>: Sam & Clara strategize and draft.
+                    </div>
+                    <div class="collab-step">
+                        <span class="num">3</span> <strong>Task Approval</strong>: You review the plan and click
+                        'Approve'.
+                    </div>
+                    <div class="collab-step">
+                        <span class="num">4</span> <strong>Human Execution</strong>: Our human team safely executes
+                        complex technical builds.
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-mockup">
+                <div class="chat-header">
+                    <div class="avatar-small"><i class="fas fa-robot"></i></div>
+                    <div class="chat-title">Concierge Agent</div>
+                </div>
+                <div class="chat-body">
+                    <div class="chat-bubble received">
+                        Ready to start. What are we building today?
+                    </div>
+                    <div class="chat-bubble sent">
+                        I need a sales page designed, email sequence written, and GoHighLevel automation set up for my
+                        course launch.
+                    </div>
+                    <div class="chat-bubble received">
+                        Got it. I've broken this down into 3 tasks and assigned them to your specialists. You can review
+                        the draft copy by tomorrow morning.
+                    </div>
+                    <a href="#" class="btn btn-primary" data-cal-link="sun-vai-ankzcv/15min"
+                        data-cal-config='{"layout":"month_view"}' style="margin-top:1rem; width:100%;">Start Delegating
+                        Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INDUSTRIES SECTION -->
+    <section class="industries-section section-scroll reveal">
+        <div class="container text-center">
+            <h2>Built for Your Industry</h2>
+            <p class="subtitle" style="margin-bottom: 3rem;">Every business is different. See exactly how we help yours.
+            </p>
+
+            <div class="industry-pills">
+                <a href="#" class="btn btn-secondary">Coaches & Speakers</a>
+                <a href="#" class="btn btn-secondary">Content Creators</a>
+                <a href="#" class="btn btn-secondary">Agencies & Consultants</a>
+                <a href="#" class="btn btn-secondary">Accountants & Advisors</a>
+                <a href="#" class="btn btn-secondary">Service Businesses</a>
+                <a href="#" class="btn btn-secondary">Real Estate</a>
+                <a href="#" class="btn btn-secondary">Health Practitioners</a>
+                <a href="#" class="btn btn-secondary">Dental Practices</a>
+                <a href="#" class="btn btn-secondary">Trades & Home Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO / OUR WORK SECTION -->
+    <section id="portfolio" class="portfolio-section section-scroll reveal">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Our Work</h2>
+                <p class="subtitle">Trusted by 1000+ founders to build world-class assets.</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="pf-img" style="background:#ddd;"></div>
+                    <p>SaaS Brand Identity</p>
+                </div>
+                <div class="portfolio-card">
+                    <div class="pf-img" style="background:#eee;"></div>
+                    <p>Webinar Funnel Launch</p>
+                </div>
+                <div class="portfolio-card">
+                    <div class="pf-img" style="background:#ccc;"></div>
+                    <p>High-Ticket Coaching Site</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section id="pricing" class="pricing-section section-scroll reveal">
+        <div class="container text-center">
             <div class="section-header">
-                <span class="section-tag fade-in">What We Offer</span>
-                <h2 class="section-title fade-in">Our <span class="gradient-text">Services</span></h2>
-                <p class="section-subtitle fade-in">
-                    Leverage AI Agents to detect, recover, and protect revenue.
-                </p>
+                <h2>Simple, transparent pricing</h2>
+                <p class="subtitle">Plans from $249/month. Pause or cancel anytime.</p>
             </div>
-
-            <div class="services-grid">
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3 class="service-title">Recovery Workflows</h3>
-                    <p class="service-description">
-                        Automatic workflows trigger payment retries, customer notifications, invoice reminders, account
-                        updates, and internal alerts to ensure no revenue is lost due to manual delays.
-                    </p>
-                    <a href="#contact" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
+            <div class="pricing-grid">
+                <!-- Tier 1 -->
+                <div class="pricing-card">
+                    <h3>Essential Starter</h3>
+                    <div class="price"><span>$</span>249<span>/mo</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Basic task requests</li>
+                        <li><i class="fas fa-check"></i> Graphic Design</li>
+                        <li><i class="fas fa-times" style="color:var(--text-muted);opacity:0.5;"></i> Copywriting</li>
+                        <li><i class="fas fa-times" style="color:var(--text-muted);opacity:0.5;"></i> Automation Builds
+                        </li>
+                        <li><i class="fas fa-check"></i> 3-4 Day Turnaround</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary btn-large" data-cal-link="sun-vai-ankzcv/30min"
+                        data-cal-config='{"layout":"month_view"}'>Get Started</a>
                 </div>
 
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3 class="service-title">Multi Agents</h3>
-                    <p class="service-description">
-                        Multiple AI agents coordinate across billing, finance, CRM, and customer communication to detect
-                        issues, take action, and automatically recover revenue through intelligent workflows.
-                    </p>
-                    <a href="#contact" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
+                <!-- Tier 2 -->
+                <div class="pricing-card featured">
+                    <div class="card-badge">Most Popular</div>
+                    <h3>Marketing Pro Team</h3>
+                    <div class="price"><span>$</span>549<span>/mo</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited task requests</li>
+                        <li><i class="fas fa-check"></i> Graphic Design & Copywriting</li>
+                        <li><i class="fas fa-check"></i> Marketing Strategy</li>
+                        <li><i class="fas fa-check"></i> Basic Automation Builds</li>
+                        <li><i class="fas fa-check"></i> 1-2 Day Turnaround</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-large" data-cal-link="sun-vai-ankzcv/30min"
+                        data-cal-config='{"layout":"month_view"}'>Get Started Today</a>
                 </div>
 
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3 class="service-title">Integrations Sync</h3>
-                    <p class="service-description">
-                        Seamless integrations with major payment gateways, accounting, CRM, and marketing channels keep
-                        revenue data synced and recovery actions automatic.
-                    </p>
-                    <a href="#contact" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <h3 class="service-title">Revenue Recovery</h3>
-                    <p class="service-description">
-                        Multi-agents automatically follow up on failed payments, unpaid invoices, and abandoned
-                        transactions using smart workflows, reminders, and retry logic to recover lost revenue without
-                        manual work.
-                    </p>
-                    <a href="#contact" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-shopping-cart"></i>
-                    </div>
-                    <h3 class="service-title">Leakage Detection</h3>
-                    <p class="service-description">
-                        Our AI agents continuously monitor transactions, invoices, subscriptions, and payment flows to
-                        detect missed payments, failed charges, duplicate refunds, and billing errors before they impact
-                        your revenue.
-                    </p>
-                    <a href="#contact" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
-
-                <div class="service-card fade-in">
-                    <div class="service-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3 class="service-title">Risk Compliance</h3>
-                    <p class="service-description">
-                        AI agents monitor transactions for compliance risks, suspicious refunds, payment disputes, and
-                        policy violations, alerting teams and taking automated actions to protect revenue and maintain
-                        financial compliance.
-                    </p>
-                    <a href="#contact" class="service-link">
-                        Learn More <i class="fas fa-arrow-right"></i>
-                    </a>
+                <!-- Tier 3 -->
+                <div class="pricing-card">
+                    <h3>Enterprise Scale</h3>
+                    <div class="price"><span>$</span>999<span>/mo</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited task requests</li>
+                        <li><i class="fas fa-check"></i> Priority queue (VIP)</li>
+                        <li><i class="fas fa-check"></i> Full Funnel & Web Dev</li>
+                        <li><i class="fas fa-check"></i> Complex API Integrations</li>
+                        <li><i class="fas fa-check"></i> Same-Day Turnaround</li>
+                    </ul>
+                    <a href="#" class="btn btn-secondary btn-large" data-cal-link="sun-vai-ankzcv/15min"
+                        data-cal-config='{"layout":"month_view"}'>Contact Us</a>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- About Section -->
-<!--
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-image fade-in">
-                    <div class="about-img-wrapper">
-                        <div class="about-shape"></div>
-                        <div class="about-content-box">
-                            <div class="experience-badge">
-                                <span class="exp-number">10+</span>
-                                <span class="exp-text">Years of Excellence</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="about-content">
-                    <span class="section-tag fade-in">About Us</span>
-                    <h2 class="section-title fade-in">We're <span class="gradient-text">Passionate</span> About
-                        Automation</h2>
-                    <p class="about-text fade-in">
-                        Founded in 2014, Automation Agency has been at the forefront of helping
-                        businesses transform their operations through intelligent automation.
-                        Our team of experts combines technical expertise with business acumen
-                        to deliver solutions that drive real results.
-                    </p>
-                    <p class="about-text fade-in">
-                        We believe that every business, regardless of size, deserves access to
-                        powerful automation tools. That's why we've developed a range of solutions
-                        that can be customized to meet your specific needs and budget.
-                    </p>
-
-                    <div class="about-features fade-in">
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Expert Team of 50+ Professionals</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Customized Solutions for Every Business</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>24/7 Dedicated Support</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Proven Track Record of Success</span>
-                        </div>
-                    </div>
-
-                    <div class="about-stats fade-in">
-                        <div class="about-stat">
-                            <span class="about-stat-number" data-target="500">0</span>+
-                            <span class="about-stat-label">Happy Clients</span>
-                        </div>
-                        <div class="about-stat">
-                            <span class="about-stat-number" data-target="1000">0</span>+
-                            <span class="about-stat-label">Projects Done</span>
-                        </div>
-                        <div class="about-stat">
-                            <span class="about-stat-number" data-target="50">0</span>+
-                            <span class="about-stat-label">Team Members</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag fade-in">Testimonials</span>
-                <h2 class="section-title fade-in">What Our <span class="gradient-text">Clients</span> Say</h2>
-                <p class="section-subtitle fade-in">
-                    Don't just take our word for it - hear from some of our satisfied clients
-                </p>
-            </div>
-
-            <div class="testimonials-slider fade-in">
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">
-                        "Automation Agency transformed our business operations. We've seen a 300%
-                        increase in efficiency and our team can now focus on what really matters.
-                        Highly recommended!"
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Smith">
-                        </div>
-                        <div class="author-info">
-                            <h4 class="author-name">John Smith</h4>
-                            <p class="author-title">CEO, TechStart Inc.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">
-                        "The team at Automation Agency is exceptional. They understood our unique
-                        challenges and delivered a solution that exceeded our expectations. Our
-                        ROI has been incredible."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
-                        </div>
-                        <div class="author-info">
-                            <h4 class="author-name">Sarah Johnson</h4>
-                            <p class="author-title">Marketing Director, GrowthCo</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">
-                        "Working with Automation Agency was a game-changer for our e-commerce
-                        business. Order processing that used to take hours now happens automatically.
-                        Amazing service!"
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">
-                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Michael Chen">
-                        </div>
-                        <div class="author-info">
-                            <h4 class="author-name">Michael Chen</h4>
-                            <p class="author-title">Founder, ShopEase</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="slider-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+    <!-- CTA SECTION -->
+    <section id="get-started" class="cta-section section-scroll reveal">
+        <div class="container cta-container">
+            <h2>Ready to scale your execution?</h2>
+            <p>Join 1000+ businesses saving time and cost with Otomate.</p>
+            <div class="hero-cta-group" style="justify-content: center; margin-bottom: 0; margin-top: 2rem;">
+                <a href="#" class="btn btn-primary btn-large" data-cal-link="sun-vai-ankzcv/30min"
+                    data-cal-config='{"layout":"month_view"}'>Book a Call Today</a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
+
+    <!-- MEGA FOOTER -->
+    <footer class="footer mega-footer">
         <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info fade-in">
-                    <span class="section-tag">Get In Touch</span>
-                    <h2 class="section-title">Let's Start Your <span class="gradient-text">Automation</span> Journey
-                    </h2>
-                    <p class="contact-text">
-                        Ready to transform your business? Get in touch with our team and
-                        let's discuss how we can help you achieve your automation goals.
-                    </p>
-
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-detail">
-                                <h4>Email</h4>
-                                <p>kazi@otomate.store</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-detail">
-                                <h4>Phone</h4>
-                                <p>+1 (555) 123-4567</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-detail">
-                                <h4>Address</h4>
-                                <p>123 Automation Street<br>Tech City, TC 12345</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="contact-form-wrapper fade-in">
-                    <form class="contact-form" id="contact-form">
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="John Doe" required>
-                            <span class="error-message" id="name-error"></span>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
-                            <span class="error-message" id="email-error"></span>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
-                            <span class="error-message" id="subject-error"></span>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..."
-                                required></textarea>
-                            <span class="error-message" id="message-error"></span>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-submit">
-                            <span class="btn-text">Send Message</span>
-                            <span class="btn-loading">
-                                <i class="fas fa-spinner fa-spin"></i>
-                            </span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-
-                        <div class="form-success" id="form-success">
-                            <i class="fas fa-check-circle"></i>
-                            <p>Thank you! Your message has been sent successfully.</p>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
+            <div class="footer-grid mega">
                 <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <span class="logo-icon">⚡</span>
-                        <span class="logo-text">Automation<span class="gradient-text">Agency</span></span>
-                    </a>
-                    <p class="footer-description">
-                        Empowering businesses with intelligent automation solutions
-                        since 2014. Let us help you transform your operations.
-                    </p>
+                    <div class="logo-text">oto<strong>mate</strong></div>
+                    <p style="margin-top:1rem; color:#A0A0A0">Your AI + Human hybrid marketing team. Execute faster,
+                        smarter, and better.</p>
+                    <div class="social-links" style="margin-top:1.5rem">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
-
                 <div class="footer-links">
-                    <h4>Quick Links</h4>
+                    <h4>Product</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Capabilities</a></li>
+                        <li><a href="#">Kickstart Kits</a></li>
+                        <li><a href="#">Meet the Team</a></li>
+                        <li><a href="#">Pricing</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-links">
-                    <h4>Services</h4>
+                    <h4>Capabilities</h4>
                     <ul>
-                        <li><a href="#services">Workflow Automation</a></li>
-                        <li><a href="#services">AI Integration</a></li>
-                        <li><a href="#services">Data Automation</a></li>
-                        <li><a href="#services">Email Automation</a></li>
-                        <li><a href="#services">E-commerce</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">Video Editing</a></li>
+                        <li><a href="#">Copywriting</a></li>
+                        <li><a href="#">Marketing Automation</a></li>
+                        <li><a href="#">Website Development</a></li>
                     </ul>
                 </div>
-
-                <div class="footer-newsletter">
-                    <h4>Newsletter</h4>
-                    <p>Subscribe to get the latest updates and tips.</p>
-                    <form class="newsletter-form" id="newsletter-form">
-                        <input type="email" placeholder="Enter your email" required>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </form>
+                <div class="footer-links">
+                    <h4>Industries</h4>
+                    <ul>
+                        <li><a href="#">Coaches & Speakers</a></li>
+                        <li><a href="#">Agencies & Consultants</a></li>
+                        <li><a href="#">Real Estate</a></li>
+                        <li><a href="#">Health Practitioners</a></li>
+                        <li><a href="#">View All Industries →</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Customer Stories</a></li>
+                        <li><a href="#">Partner Program</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Client Login</a></li>
+                    </ul>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <p>&copy; 2024 Automation Agency. All rights reserved.</p>
-                <div class="footer-bottom-links">
+                <div class="legal-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
+                    <a href="#">Fair Usage Policy</a>
+                    <a href="#">Cookie Policy</a>
                 </div>
+                <p>&copy; 2026 Otomate. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Cal element-click embed code begins -->
+    <script type="text/javascript">
+        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; typeof namespace === "string" ? (cal.ns[namespace] = api) && p(api, ar) : p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+        Cal("init", { origin: "https://cal.com" });
+        Cal("ui", { "styles": { "branding": { "brandColor": "#FF6B35" } }, "hideEventTypeDetails": false, "layout": "month_view" });
+    </script>
+    <!-- Cal element-click embed code ends -->
 </body>
 
 </html>
